@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace home5._2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string temp;
+            string surname = "Andrey";
+            string name = "Scherbakov";
+
+            Console.WriteLine(name + " " + surname);
+
+            temp = name;
+            name = surname;
+            surname = temp;
+
+            Console.WriteLine(name + " " + surname);
+        }
+    }
+}

@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace home4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int pictures = 52;
+            int pictures2 = 3;
+            int rangeAlbum = pictures / pictures2;
+            int lostAlbum = pictures % rangeAlbum;
+            Console.WriteLine("На экране поместится " + rangeAlbum + " рядов, лишней останется " + lostAlbum + " картинка");            
+        }
+    }
+}

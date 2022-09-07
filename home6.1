@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace home6._2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Придя в поликлиннику вы увидели очередь людей,введите количество людей в очереди");
+            int people = Convert.ToInt32(Console.ReadLine());
+            int peopleTimeMinute = people * 10;
+            int peopleTimeHour = peopleTimeMinute / 60;
+            peopleTimeMinute = peopleTimeMinute % 60;
+
+            Console.WriteLine("Ваше время ожидания в очереди " + peopleTimeHour + " часов " + peopleTimeMinute + " минут.");            
+        }
+    }
+}

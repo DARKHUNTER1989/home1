@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace home_6._3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int quantityOldPeople;
+            int timePerHumanMinutes = 10;
+            int minutesInHour = 60;
+            int waitTotalTimeMinutes;
+            int waitHours;
+            int waitMinutes;
+
+            Console.Write("Сколько старушек перед вами: ");
+            quantityOldPeople = Convert.ToInt32(Console.ReadLine());
+            waitTotalTimeMinutes = quantityOldPeople * timePerHumanMinutes;
+            waitHours = waitTotalTimeMinutes / minutesInHour;
+            waitMinutes = waitTotalTimeMinutes - waitHours * minutesInHour;
+            Console.WriteLine($"Вам стоять в очереди часов {waitHours}, минут {waitMinutes}");
+        }
+    }
+}
